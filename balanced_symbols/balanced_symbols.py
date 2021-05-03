@@ -20,12 +20,11 @@ class BalancedSymbols:
 
     comments = ('/*', '*/')
 
-    stack = deque()
-
     bypass_mode = False
 
     def __init__(self):
         self.count = 0
+        self.stack = deque()
 
     def check_str_is_balanced(self, string_to_check: str) -> bool:
         """
